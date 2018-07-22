@@ -32,7 +32,7 @@ deploy-prod:
   image: registry.gitlab.com/m_milovidov/katelynemaroney
   only:
     - master
-  when: manual
+  when: on_success
   environment:
     name: production
     url: https://katelynemaroney.com

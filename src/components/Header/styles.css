@@ -1,0 +1,9 @@
+.Header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)),
+                    url("https://katelynem.files.wordpress.com/2018/07/fullsizeoutput_339.jpeg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -4,11 +4,3 @@ html, body {
   padding: 0;
   font-family: 'Montserrat', sans-serif;
 }
-
-.App-header {
-  background-image: url("https://katelynem.files.wordpress.com/2018/07/fullsizeoutput_339.jpeg");
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}

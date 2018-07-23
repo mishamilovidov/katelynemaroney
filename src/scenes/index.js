@@ -17,9 +17,6 @@ class App extends Component {
       <div className="App">
         <Navigation />
         <Header />
-        <p className="App-intro">
-          Katelyne Maroney's is <b>coming soon</b>. In the meantime, feel free to be enchanted by the ReactJS logo.
-        </p>
       </div>
     );
   }

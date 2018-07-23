@@ -1,13 +1,22 @@
 import React, { Component } from 'react';
+import WebFont from 'webfontloader';
 import './styles.css';
+
+import Navigation from '../components/Navigation';
+import Header from '../components/Header';
+
+WebFont.load({
+  google: {
+    families: ['Montserrat', 'sans-serif']
+  }
+});
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Katelyne Maroney's Site is Coming Soon!</h1>
-        </header>
+        <Navigation />
+        <Header />
         <p className="App-intro">
           Katelyne Maroney's is <b>coming soon</b>. In the meantime, feel free to be enchanted by the ReactJS logo.
         </p>

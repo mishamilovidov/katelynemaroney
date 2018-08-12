@@ -25,8 +25,8 @@ export function gallery(state = [], action) {
 
               image.src = photo.URL;
               image.thumbnail = photo.URL;
-              image.thumbnailWidth = photo.width * .3;
-              image.thumbnailHeight = photo.height * .3;
+              image.thumbnailWidth = photo.width * .1;
+              image.thumbnailHeight = photo.height * .1;
               image.tags = [{value: `#${photo.description}`, title: `#${photo.description}`}]
 
               media.push(image);

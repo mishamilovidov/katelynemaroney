@@ -5,6 +5,7 @@ import './styles.css';
 
 import Navigation from '../components/Navigation';
 import Gallery from './Gallery';
+import Videos from './Videos';
 
 WebFont.load({
   google: {
@@ -20,6 +21,7 @@ class App extends Component {
         <div className="body">
           <Switch>
             <Route exact path='/gallery' component={Gallery}/>
+            <Route exact path='/videos' component={Videos}/>
             <Route exact path='/' component={Gallery}/>
           </Switch>
         </div>

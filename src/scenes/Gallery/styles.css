@@ -1,0 +1,9 @@
+.Gallery {
+  text-align: center;
+  margin: 35px 0px;
+}
+
+.Gallery #GridGallery {
+  margin-bottom: 105px;
+  overflow: auto;
+}

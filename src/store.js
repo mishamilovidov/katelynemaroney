@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import { PhotographyReducer } from './scenes/Photography/reducer';
+import { GalleryReducer } from './scenes/Gallery/reducer';
 
 const rootReducer = combineReducers({
-  ...PhotographyReducer
+  ...GalleryReducer
 });
 
 export default rootReducer;

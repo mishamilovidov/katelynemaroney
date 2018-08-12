@@ -3,8 +3,7 @@ import WebFont from 'webfontloader';
 import './styles.css';
 
 import Navigation from '../components/Navigation';
-import Header from '../components/Header';
-import Photography from './Photography';
+import Gallery from './Gallery';
 
 WebFont.load({
   google: {
@@ -17,9 +16,8 @@ class App extends Component {
     return (
       <div className="App">
         <Navigation />
-        <Header />
         <div className="body">
-          <Photography />
+          <Gallery />
         </div>
       </div>
     );

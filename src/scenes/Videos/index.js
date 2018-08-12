@@ -1,45 +1,46 @@
+import _ from 'lodash';
 import React, { Component } from 'react';
-// import { connect } from 'react-redux';
-// import { getGallery } from './actions';
-// import Gallery from 'react-grid-gallery';
+import { connect } from 'react-redux';
+import { getVideos } from '../../services/vimeo/actions';
+// import { Player } from 'video-react';
 import './styles.css';
 
 class Videos extends Component {
-  // componentDidMount() {
-  //   this.props.getGallery();
-  // }
+  componentDidMount() {
+    this.props.getVideos();
+  }
 
   render() {
-    // const tagStyles ={
-    //   color: "#d9d9d9",
-    //   padding: "0px 8px",
-    //   fontSize: "10px",
-    //   backgroundColor: "rgba(0, 0, 0, 0.5)"
-    // }
-    //
-    // const { gallery, isLoading, hasErrored } = this.props;
-    //
-    // if (isLoading || hasErrored) {
-    //   return (
-    //     <div className="Gallery"></div>
-    //   );
-    // }
+    const { videos } = this.props;
+
+    if (_.isEmpty(videos, true)) {
+      return (
+        <div className="Videos"></div>
+      );
+    }
 
     return (
       <div className="Videos">
-        Videos
+        {
+          videos.data.map((video) => {
+            return (
+              <div className="video" key={video.uri}>
+                <iframe src={`https://player.vimeo.com/video/${video.uri.split('/').pop()}`} title={video.title} width="100%" frameBorder="0" allowFullScreen></iframe>
+              </div>
+            );
+          })
+        }
       </div>
     );
   }
 }
 
-// function mapStateToProps(state, ownProps) {
-//   return {
-//     gallery: state.gallery,
-//     hasErrored: state.galleryFetchError,
-//     isLoading: state.galleryIsLoading
-//   };
-// }
-//
-// export default connect(mapStateToProps, { getGallery })(Home);
-export default Videos;
+function mapStateToProps(state, ownProps) {
+  return {
+    videos: state.videos,
+    hasErrored: state.videosFetchError,
+    isLoading: state.videosIsLoading
+  };
+}
+
+export default connect(mapStateToProps, { getVideos })(Videos);

@@ -8,12 +8,14 @@
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-grid-gallery": "^0.5.1",
+    "react-html5video": "^2.5.1",
     "react-loader-spinner": "^2.1.0",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0",
+    "video-react": "^0.13.0",
     "webfontloader": "^1.6.28"
   },
   "scripts": {

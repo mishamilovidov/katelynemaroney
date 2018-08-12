@@ -20,7 +20,7 @@ export function gallery(state = [], action) {
           let media = [];
 
           _.forEach(action.media.media, (photo) => {
-            if (photo.title !== "favicon" && photo.title !== "about me") {
+            if (photo.title !== "favicon" && photo.description !== "about me") {
               let image = {}
 
               image.src = photo.URL;

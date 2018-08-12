@@ -1,3 +1,22 @@
 .Videos {
-  text-align: center;
+  margin: 35px auto;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Videos iframe {
+  border: 0;
+}
+
+@media (max-width: 576px) {
+  .Videos {
+    width: 100%;
+    display: block;
+  }
+
+  .Videos .video {
+    margin-bottom: 15px;
+  }
 }

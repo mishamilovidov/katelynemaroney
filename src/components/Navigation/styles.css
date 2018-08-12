@@ -4,6 +4,16 @@
   text-align: center;
 }
 
+.Navigation a,
+.Navigation a:link,
+.Navigation a:visited,
+.Navigation a:hover,
+.Navigation a:active {
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: inherit;
+}
+
 .Navigation .logo-text {
   font-size: 34px;
   margin: 30px 45px 20px 45px;

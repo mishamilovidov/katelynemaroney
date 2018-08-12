@@ -18,11 +18,11 @@ class Navigation extends Component {
   render() {
     return (
       <div className="Navigation">
-        <div className="logo-text">Katelyne Maroney</div>
+        <div className="logo-text"><Link to="/">Katelyne Maroney</Link></div>
         <div className="links">
           <div><Link to="/gallery">Gallery</Link></div>
           <div><Link to="/videos">Videos</Link></div>
-          <div>About</div>
+          <div><Link to="/about">About</Link></div>
           <div><Link to="/contact">Contact</Link></div>
         </div>
       </div>

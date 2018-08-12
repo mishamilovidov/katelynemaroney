@@ -23,7 +23,7 @@ class Navigation extends Component {
           <div><Link to="/gallery">Gallery</Link></div>
           <div><Link to="/videos">Videos</Link></div>
           <div>About</div>
-          <div>Contact</div>
+          <div><Link to="/contact">Contact</Link></div>
         </div>
       </div>
     );

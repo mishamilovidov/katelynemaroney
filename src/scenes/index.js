@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import './styles.css';
 
 import Navigation from '../components/Navigation';
+import Contact from './Contact';
 import Gallery from './Gallery';
 import Videos from './Videos';
 
@@ -20,6 +21,7 @@ class App extends Component {
         <Navigation />
         <div className="body">
           <Switch>
+            <Route exact path='/contact' component={Contact}/>
             <Route exact path='/gallery' component={Gallery}/>
             <Route exact path='/videos' component={Videos}/>
             <Route exact path='/' component={Gallery}/>

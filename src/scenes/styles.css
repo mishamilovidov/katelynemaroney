@@ -5,16 +5,6 @@ html, body {
   font-family: 'Montserrat', sans-serif;
 }
 
-a,
-a:link,
-a:visited,
-a:hover,
-a:active {
-    color: inherit;
-    text-decoration: inherit;
-    font-weight: inherit;
-}
-
 .App .body {
   width: 75%;
   margin: 0 auto;

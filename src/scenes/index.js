@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import WebFont from 'webfontloader';
+import { Switch, Route } from 'react-router-dom';
 import './styles.css';
 
 import Navigation from '../components/Navigation';
@@ -17,7 +18,10 @@ class App extends Component {
       <div className="App">
         <Navigation />
         <div className="body">
-          <Gallery />
+          <Switch>
+            <Route exact path='/gallery' component={Gallery}/>
+            <Route exact path='/' component={Gallery}/>
+          </Switch>
         </div>
       </div>
     );

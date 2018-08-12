@@ -16,8 +16,14 @@
 
 .Navigation .logo-text {
   font-size: 34px;
-  margin: 30px 45px 20px 45px;
+  margin: 30px 45px 3px 45px;
   display: block;
+}
+
+.Navigation .divider {
+  width: 30%;
+  margin: 0 auto;
+  height: 20px;
 }
 
 .Navigation .links {
@@ -33,9 +39,17 @@
   margin: 0px 8px 0px 8px;
 }
 
+.Navigation .is-active {
+  font-weight: 600 !important;
+}
+
 @media (max-width: 576px) {
   .Navigation .logo-text {
     font-size: 24px;
-    margin: 23px 18px 18px 18px;
+    margin: 23px 18px 6px 18px;
+  }
+
+  .Navigation .divider {
+    width: 100%;
   }
 }

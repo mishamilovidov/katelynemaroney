@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import divider from './divider.png';
 import './styles.css';
 
 class Navigation extends Component {
@@ -18,12 +19,13 @@ class Navigation extends Component {
   render() {
     return (
       <div className="Navigation">
-        <div className="logo-text"><Link to="/">Katelyne Maroney</Link></div>
+        <div className="logo-text"><NavLink to="/">Katelyne Maroney</NavLink></div>
+        <img className="divider" src={divider} />
         <div className="links">
-          <div><Link to="/gallery">Gallery</Link></div>
-          <div><Link to="/videos">Videos</Link></div>
-          <div><Link to="/about">About</Link></div>
-          <div><Link to="/contact">Contact</Link></div>
+          <div><NavLink activeClassName='is-active' to="/gallery">Gallery</NavLink></div>
+          <div><NavLink activeClassName='is-active' to="/videos">Videos</NavLink></div>
+          <div><NavLink activeClassName='is-active' to="/about">About</NavLink></div>
+          <div><NavLink activeClassName='is-active' to="/contact">Contact</NavLink></div>
         </div>
       </div>
     );

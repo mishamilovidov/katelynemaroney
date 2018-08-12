@@ -11,7 +11,7 @@ import Videos from './Videos';
 
 WebFont.load({
   google: {
-    families: ['Montserrat', 'sans-serif']
+    families: ['Montserrat:400,600', 'sans-serif']
   }
 });
 

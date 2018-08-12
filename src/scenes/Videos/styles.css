@@ -10,6 +10,12 @@
   border: 0;
 }
 
+@media (max-width: 991px) {
+  .Videos {
+    width: 80%;
+  }
+}
+
 @media (max-width: 576px) {
   .Videos {
     width: 100%;

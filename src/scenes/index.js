@@ -8,6 +8,7 @@ import About from './About';
 import Contact from './Contact';
 import Gallery from './Gallery';
 import Videos from './Videos';
+import Footer from '../components/Footer';
 
 WebFont.load({
   google: {
@@ -29,6 +30,7 @@ class App extends Component {
             <Route exact path='/' component={Gallery}/>
           </Switch>
         </div>
+        <Footer />
       </div>
     );
   }

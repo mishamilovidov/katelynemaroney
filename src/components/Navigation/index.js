@@ -20,7 +20,7 @@ class Navigation extends Component {
     return (
       <div className="Navigation">
         <div className="logo-text"><NavLink to="/">Katelyne Maroney</NavLink></div>
-        <img className="divider" src={divider} />
+        <img className="divider" src={divider} alt="" />
         <div className="links">
           <div><NavLink activeClassName='is-active' to="/gallery">Gallery</NavLink></div>
           <div><NavLink activeClassName='is-active' to="/videos">Videos</NavLink></div>

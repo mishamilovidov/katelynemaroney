@@ -1,3 +1,27 @@
 .About {
   text-align: center;
+  margin: 35px auto;
+  width: 60%;
+}
+
+.About img {
+  float: left;
+  width: 100px;
+  margin: 5px 10px 10px 0px;
+}
+
+.About .content {
+  display: inline;
+  text-align: left;
+}
+
+@media (max-width: 576px) {
+  .About {
+    margin: 35px auto;
+    width: 95%;
+  }
+
+  .About img {
+    display: none;
+  }
 }

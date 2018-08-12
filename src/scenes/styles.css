@@ -4,3 +4,14 @@ html, body {
   padding: 0;
   font-family: 'Montserrat', sans-serif;
 }
+
+.App .body {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  .App .body {
+    width: 95%;
+  }
+}

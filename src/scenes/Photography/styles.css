@@ -1,0 +1,10 @@
+.Photography {
+  text-align: center;
+  margin: 35px 0px;
+}
+
+.Photography .title {
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-style: italic;
+}

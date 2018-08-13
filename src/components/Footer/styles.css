@@ -1,9 +1,7 @@
 .Footer {
-  /* height: 150px; */
   padding: 2.625em 1.75em 1em 1.75em;
   color: #333332;
   position: relative;
-  z-index: 9999;
   min-height: 1em;
   margin: 0 auto 25px 0;
   text-align: center;
@@ -17,7 +15,6 @@
 .Footer .icon > a > img {
   max-width: 25px;
   height: 25px;
-  /* border-radius: 25px; */
   margin-right: 10px;
 }
 

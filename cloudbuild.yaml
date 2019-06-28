@@ -1,0 +1,20 @@
+steps:
+  # Install
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['install']
+
+  # Test
+  # - name: 'gcr.io/cloud-builders/npm'
+  #   args: ['run', 'test:unit']
+
+  # Build
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run', 'build']
+
+  # Apply Target for Deploy
+  - name: 'gcr.io/$PROJECT_ID/firebase'
+    args: ['target:apply', 'hosting', 'katelynemaroney', 'katelynemaroney']
+
+  # Deploy
+  - name: 'gcr.io/$PROJECT_ID/firebase'
+    args: ['deploy', '--only', 'hosting:katelynemaroney']

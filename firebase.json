@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "target": "katelynemaroney",
     "public": "build",
     "ignore": [
       "firebase.json",

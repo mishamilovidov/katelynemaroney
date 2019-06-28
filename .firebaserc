@@ -1,5 +1,14 @@
 {
   "projects": {
-    "default": "katelynemaroney-klm"
+    "default": "osito-oto"
+  },
+  "targets": {
+    "osito-oto": {
+      "hosting": {
+        "katelynemaroney": [
+          "katelynemaroney"
+        ]
+      }
+    }
   }
 }
